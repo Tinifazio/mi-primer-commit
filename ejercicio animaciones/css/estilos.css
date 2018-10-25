@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes girar {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+ul {
+	position: relative
+}
+ul li i {
+	animation-name: girar;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	font-size: 150px;
+	position: absolute;
+}
+
+ul li.uno i {
+	font-size: 175px;
+	left: 25px;
+	top: 325px;
+	animation-direction: reverse;
+}
+
+ul li.dos i {
+	font-size: 450px;
+	left: 80px;
+	top: 0;
+}
+
+ul li.tres i {
+	font-size: 250px;
+	left: 100px;
+	top: 450px;
+}
+
+ul li.cuatro i {
+	font-size: 175px;
+	left: 460px;
+	top: 210px;
+	animation-direction: reverse;
+}
+
+ul li.cinco i {
+	left: 420px;
+	top: 550px;
+	animation-direction: reverse;
+}
